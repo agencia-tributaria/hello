@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Create report file
-        run: date +%s > docs/report.txt
+        run: date +%s > src/main/java/report.txt
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v8
@@ -19,4 +19,4 @@ jobs:
           author_name: Your Name
           author_email: mail@example.com
           message: 'Your commit message'
-          add: 'docs/report.txt'
+          add: 'src/main/java/report.txt'
