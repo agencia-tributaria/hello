@@ -1,5 +1,8 @@
 name: Commit Date
-on: push
+on:
+  push:
+    paths:
+      - 'docs/index.xml'
 
 jobs:
   run:
