@@ -20,5 +20,5 @@ jobs:
         with:
           author_name: Your Name
           author_email: mail@example.com
-          message: 'Your commit message'
+          message: 'Update Java binding (automated)'
           add: 'src/main/java/Report.java'
