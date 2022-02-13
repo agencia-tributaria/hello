@@ -1,8 +1,17 @@
+name: Push commit on pull request
 on: push
 jobs:
-  build:
+  report:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          echo "Hello, World!"
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'Pepe Pérez'
+          git config --global user.email 'yo@pepe.perez'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "primeras prueba"
+          git push
+
