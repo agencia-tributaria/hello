@@ -1,18 +1,19 @@
-name: Push commit on pull request
+name: Commit Date
 on: push
+
 jobs:
-  report:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Create report file
         run: date +%s > report.txt
-      - name: Commit report
-        run: |
-          git config --global user.name 'Pepe Pérez'
-          git config --global user.email 'yo@pepe.perez'
-          git add report.txt
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "primeras prueba"
-          git push
 
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v8
+        with:
+          author_name: Your Name
+          author_email: mail@example.com
+          message: 'Your commit message'
+          add: 'report.txt'
