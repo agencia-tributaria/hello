@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Create report file
-        run: date +%s > report.txt
+        run: date +%s > docs/report.txt
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v8
