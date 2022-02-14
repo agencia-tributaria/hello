@@ -2,5 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="../resource_type.xsl"?>
 <resource_type xmlns="http://wadl.dev.java.net/2009/02">
  <doc title="Hello, World!"/>
- <method name="GET"></method>
+ <method name="GET">
+  <request>
+   <param name="Accept" style="header"/>
+  </request>
+ </method>
 </resource_type>
