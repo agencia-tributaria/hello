@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../resource_type2.xsl"?>
 <resource_type xmlns="http://wadl.dev.java.net/2009/02">
- <doc title="Hello, World!">
+ <doc title="Hello, World!"/>
  <method name="GET"></method>
 </resource_type>
