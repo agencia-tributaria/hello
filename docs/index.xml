@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../resource_type.xsl"?>
-<resource_type xmlns="http://wadl.dev.java.net/2009/02">
+<resource_type xmlns="http://wadl.dev.java.net/2009/02" xmlns:x="http://www.w3.org/2001/XInclude">
  <doc title="Hello, World!"/>
  <method name="GET">
   <request>
@@ -10,6 +10,7 @@
   </request>
   <response status="200">
    <representation mediaType="application/vnd.es.aeat.hello#2022-01">
+    <x:include href="representation.xml" xpointer="/hello/*"/>
    </representation>
    <representation mediaType="application/vnd.es.aeat.hello#2022-02">
    </representation>
