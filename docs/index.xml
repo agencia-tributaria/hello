@@ -4,7 +4,9 @@
  <doc title="Hello, World!"/>
  <method name="GET">
   <request>
-   <param name="Accept" style="header"/>
+   <param name="Accept" style="header" default="application/vnd.es.aeat.hello#2022-01">
+    <option value="application/vnd.es.aeat.hello#2022-02"/>
+   </param>
   </request>
  </method>
 </resource_type>
