@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: agencia-tributaria/resource_type@v1.1
+        uses: agencia-tributaria/resource_type@v1.2
         with:
           who-to-greet: 'Santi Potros'
       # Use the output from the `hello` step
