@@ -8,5 +8,11 @@
     <option value="application/vnd.es.aeat.hello#2022-02"/>
    </param>
   </request>
+  <response status="200">
+   <representation mediaType="application/vnd.es.aeat.hello#2022-01">
+   </representation>
+   <representation mediaType="application/vnd.es.aeat.hello#2022-02">
+   </representation>
+  </response>
  </method>
 </resource_type>
