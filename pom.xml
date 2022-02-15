@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>agencia-tributaria.github.io</groupId>
+  <groupId>agencia-tributaria</groupId>
   <artifactId>hello</artifactId>
   <version>1.0</version>
 
@@ -26,7 +26,7 @@
 
   <repositories>
     <repository>
-      <id>agencia-tributaria.github.io</id>
+      <id>agencia-tributaria</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/*</url>
     </repository>
   </repositories>
